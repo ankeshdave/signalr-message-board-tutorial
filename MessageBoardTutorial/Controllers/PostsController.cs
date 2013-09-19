@@ -17,7 +17,7 @@ namespace MessageBoardTutorial.Controllers
         }
 
         // GET api/<controller>
-        public IEnumerable<object> Get()
+        public IEnumerable<Post> Get()
         {
             return this._ctx.Posts.OrderByDescending(x => x.DatePosted).ToList();
         }
